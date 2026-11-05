@@ -38,3 +38,15 @@ def predict(data: UserInput):
         "salary": data.salary,
         "prediction": int(prediction[0])
     }
+    
+    
+@app.get("/health")
+def health():
+    return {
+        "status": "healthy",
+        "message": "Random Forest API is running"
+    }
+    
+    
+    
+    
