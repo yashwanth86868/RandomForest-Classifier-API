@@ -1,0 +1,8 @@
+
+services:
+  random-forest-api:
+    build: .
+    container_name: random-forest-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
